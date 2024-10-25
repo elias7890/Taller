@@ -4,7 +4,6 @@
   "description": "AppTaller",
   "author": "Elias Concha",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "dev": "gulp"
   },
