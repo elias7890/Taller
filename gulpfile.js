@@ -2,12 +2,12 @@ const path = require('path');
 const fs = require('fs');
 const { glob } = require('glob');
 const { src, dest, watch, series } = require('gulp');
-const dartSass = require('sass');
-const gulpSass = require('gulp-sass');
+const dartSass = require('gulp-dart-sass'); // Cambiado a gulp-dart-sass
 const terser = require('gulp-terser');
 const sharp = require('sharp');
 
-const sass = gulpSass(dartSass);
+// No se necesita crear una instancia de Sass; simplemente se puede usar directamente
+const sass = dartSass();
 
 const paths = {
     scss: 'src/scss/**/*.scss',
